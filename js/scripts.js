@@ -1,9 +1,15 @@
 // BUSINESS LOGIC
 let wrongNumber = 'Please enter a positive, whole number.';
+let numberArray = [];
 
 let checkNumbers = function(userNumber) {
   if(userNumber < 0) {
     return wrongNumber;
+  } else {
+    for (let i = 0; i <= userNumber; i++) {
+      numberArray.push(i);
+    }
+    return numberArray;
   }
 };
 
