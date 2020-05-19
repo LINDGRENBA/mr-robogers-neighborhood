@@ -1,5 +1,11 @@
 // BUSINESS LOGIC
+let wrongNumber = 'Please enter a positive, whole number.';
 
+let checkNumbers = function(userNumber) {
+  if(userNumber < 0) {
+    return wrongNumber;
+  }
+};
 
 
 
@@ -12,6 +18,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     let userNumber = $('#number').val();
-    $('.number-range').text(userNumber);
+    let result = checkNumbers(userNumber);
+    $('.number-range').text(result);
   });
 });
