@@ -18,7 +18,7 @@ let checkNumbers = function(userNumber) {
         numberArray.push(i);
       }
     }
-    return numberArray;
+    return numberArray.join(', ');
   } else {
     return wrongNumber;
   }
@@ -33,5 +33,6 @@ $(document).ready(function() {
     let userNumber = parseInt($('#number').val());
     let result = checkNumbers(userNumber);
     $('.number-range').text(result);
+    $('.results').slideDown();
   });
 });

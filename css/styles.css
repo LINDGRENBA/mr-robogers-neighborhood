@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  height: auto;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url(../img/robot.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 60%;
+  margin: 20px auto;
+  color: #FFF;
+  line-height: 1.5em;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.btn {
+  color: #000;
+}
+
+.results {
+  margin-top: 25px;
+  display: none;
+}
+
+.number-range {
+  background-color: #FFF;
+  color: #031535;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+footer {
+ padding: 30px 0;
+}
+
+
+

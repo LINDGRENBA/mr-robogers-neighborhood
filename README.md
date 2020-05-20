@@ -37,46 +37,41 @@ There are no known bugs at this time.
 * Output Example: 5
 
 #### Spec 2
-* Behavior: The program returns false / does not run if the user enters a character other than a number
-* Input Example: 'hello', %, ...
-* Output Example: false / program does not run
-
-#### Spec 3
 * Behavior: The program returns false / does not run if the number is less than 0.
 * Input Example: -9
 * Output Example: false / program does not run
 
-#### Spec 4
+#### Spec 3
 * Behavior: The program returns a range of numbers from 0 to the user's inputted number
 * Input Example: 4
 * Output Example: 0, 1, 2, 3, 4
 
-#### Spec 5
+#### Spec 4
 * Behavior: The program will replace the number 1 with 'Beep!'.
 * Input Example: 1
 * Output Example: 'Beep!'
 
-#### Spec 6
-* Behavior: The program will replace the number 2 with 'Beep!'.
+#### Spec 5
+* Behavior: The program will replace the number 2 with 'Boop!'.
 * Input Example: 2
 * Output Example: 'Boop!'
 
-#### Spec 7
+#### Spec 6
 * Behavior: The program will replace the number 3 with 'Won't you be my neighbor?'.
 * Input Example: 3
 * Output Example: 'Won't you be my neighbor?'
 
-#### Spec 8
+#### Spec 7
 * Behavior: The program replaces all digits with 'Beep!' if the number contains a 1.
-* Input Example: 11
+* Input Example: 10
 * Output Example: 'Beep!'
 
-#### Spec 9
+#### Spec 8
 * Behavior: The program replaces all digits with 'Boop!' if the number contains a 2.
-* Input Example: 12
+* Input Example: 21
 * Output Example: 'Boop!'
 
-#### Spec 10
+#### Spec 9
 * Behavior: The program replaces all digits with 'Won't you be my neighbor?' if the number contains a 3
 * Input Example: 23
 * Output Example: 'Won't you be my neighbor?'
