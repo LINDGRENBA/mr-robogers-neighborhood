@@ -1,37 +1,31 @@
 // BUSINESS LOGIC
-let wrongNumber = 'Please enter a positive, whole number.';
-let numberArray = [];
-
 let checkNumbers = function(userNumber) {
-  if(userNumber < 0) {
-    return wrongNumber;
-  } else {
-    // create a for loop that counts from 0 to the user's number and push the number to array
+  let wrongNumber = 'Please enter a positive, whole number.';
+  let numberArray = [];
+
+  if (userNumber >= 0) {
     for (let i = 0; i <= userNumber; i++) {
-      // NEED TO CHANGE i TO STRING AND THEN CHECK IF STRING INCLUDES 1? - IF SO, WILL NEED TO PARSE INT i WHEN PUSHING BACK TO ARRAY
+      // change i value into string 
       let numberToString = i.toString();
-      if (i === 3) {
+      // check if string includeds 3, 2 or 1     
+      if (numberToString.includes('3')) {
         numberArray.push('Won\'t you be my neighbor?');
-      } else if (i === 2) {
+      } else if (numberToString.includes('2')) {
         numberArray.push('Boop!');
-      } else if (i === 1) {
+      } else if (numberToString.includes('1')) {
         numberArray.push('Beep!');
       } else {
         numberArray.push(i);
       }
     }
-
     return numberArray;
+  } else {
+    return wrongNumber;
   }
 };
 
-// Need to ParseInt numbers before pushing to array
-
-
-
 
 // USER INTERFACE LOGIC
-
 $(document).ready(function() {
   $('#number-form').submit(function(event) {
     event.preventDefault();
