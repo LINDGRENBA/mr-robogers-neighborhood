@@ -1,5 +1,5 @@
 // BUSINESS LOGIC
-let checkNumbers = function(userNumber) {
+let checkNumbers = function(userNumber, userName) {
   let wrongNumber = 'Please enter a positive, whole number.';
   let numberArray = [];
 
@@ -9,7 +9,7 @@ let checkNumbers = function(userNumber) {
       let numberToString = i.toString();
       // check if string includeds 3, 2 or 1     
       if (numberToString.includes('3')) {
-        numberArray.push('Won\'t you be my neighbor?');
+        numberArray.push('Won\'t you be my neighbor, ' + userName + '?' );
       } else if (numberToString.includes('2')) {
         numberArray.push('Boop!');
       } else if (numberToString.includes('1')) {
@@ -24,15 +24,45 @@ let checkNumbers = function(userNumber) {
   }
 };
 
+let checkNumbersReversed = function(userNumber, userName) {
+  let reverseArray = [];
+
+    for (let i = userNumber; i >= 0; i--) {
+      // change i value into string 
+      let numberToString = i.toString();
+      // check if string includeds 3, 2 or 1     
+      if (numberToString.includes('3')) {
+        reverseArray.push('Won\'t you be my neighbor, ' + userName + '?' );
+      } else if (numberToString.includes('2')) {
+        reverseArray.push('Boop!');
+      } else if (numberToString.includes('1')) {
+        reverseArray.push('Beep!');
+      } else {
+        reverseArray.push(i);
+      }
+    }
+    return reverseArray.join(', ');
+}
+
 
 // USER INTERFACE LOGIC
 $(document).ready(function() {
   $('#number-form').submit(function(event) {
     event.preventDefault();
-
+    // get range from 0 to user's number
     let userNumber = parseInt($('#number').val());
-    let result = checkNumbers(userNumber);
+    let userName = $("#name").val();
+    let result = checkNumbers(userNumber, userName);
     $('.number-range').text(result);
     $('.results').slideDown();
+    $('.reverse-div').slideDown();
+
+    // reverse range to show from user's number to 0
+    $('.reverse-button').click(function() {
+      let reverseResult = checkNumbersReversed(userNumber, userName);
+      $('.number-range').text(reverseResult);
+      $('.reverse-div').slideUp();
+    });
   });
+
 });

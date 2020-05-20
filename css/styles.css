@@ -26,12 +26,12 @@ form {
   color: #000;
 }
 
-.results {
+.results, .reverse-div, .reverse-results {
   margin-top: 25px;
   display: none;
 }
 
-.number-range {
+.number-range, .reverse-results {
   background-color: #FFF;
   color: #031535;
   padding: 15px;

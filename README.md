@@ -17,7 +17,7 @@ Use BDD to write specifications for a program that will take in a number from th
 
 ## Known Bugs
 
-There are no known bugs at this time.
+At this time, if username is not entered, numbers including a 3 return 'Won't you be my neighbor,  ?'  with space where name would be. Need to fix but to return without comma and whitespace if no name is entered.
 
 ## Mr. Roboger's Neighborhood Rules
 1. Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
@@ -76,6 +76,11 @@ There are no known bugs at this time.
 * Input Example: 23
 * Output Example: 'Won't you be my neighbor?'
 
+#### Spec 10
+* Behavior: If username is entered, program will return 'Won't you be my neighbor, name?'
+* Input Example: Zoidberg
+* Output Example: 'Won't you be my neighbor, Zoidberg?'
+
 ## Support and contact details
 
 Please feel free to contact me through GitHub with any questions, ideas or concerns.
@@ -86,6 +91,7 @@ Please feel free to contact me through GitHub with any questions, ideas or conce
 * CSS
 * git
 * GitHub
+* Unsplash.com
 * Bootstrap 3.3.7
 * javascript and jQuery 3.5.0
 
