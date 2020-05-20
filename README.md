@@ -17,7 +17,7 @@ Use BDD to write specifications for a program that will take in a number from th
 
 ## Known Bugs
 
-At this time, if username is not entered, numbers including a 3 return 'Won't you be my neighbor,  ?'  with space where name would be. Need to fix but to return without comma and whitespace if no name is entered.
+No known bugs at this time.
 
 ## Mr. Roboger's Neighborhood Rules
 1. Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"

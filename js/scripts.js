@@ -9,7 +9,11 @@ let checkNumbers = function(userNumber, userName) {
       let numberToString = i.toString();
       // check if string includeds 3, 2 or 1     
       if (numberToString.includes('3')) {
-        numberArray.push('Won\'t you be my neighbor, ' + userName + '?' );
+        if (userName === '') {
+          numberArray.push('Won\'t you be my neighbor?');
+        } else {
+          numberArray.push('Won\'t you be my neighbor, ' + userName + '?' );
+        }
       } else if (numberToString.includes('2')) {
         numberArray.push('Boop!');
       } else if (numberToString.includes('1')) {
@@ -32,7 +36,11 @@ let checkNumbersReversed = function(userNumber, userName) {
       let numberToString = i.toString();
       // check if string includeds 3, 2 or 1     
       if (numberToString.includes('3')) {
-        reverseArray.push('Won\'t you be my neighbor, ' + userName + '?' );
+        if (userName === '') {
+          reverseArray.push('Won\'t you be my neighbor?');
+        } else {
+          reverseArray.push('Won\'t you be my neighbor, ' + userName + '?' );
+        }
       } else if (numberToString.includes('2')) {
         reverseArray.push('Boop!');
       } else if (numberToString.includes('1')) {
