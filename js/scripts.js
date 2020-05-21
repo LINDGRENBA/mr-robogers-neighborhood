@@ -6,13 +6,14 @@ let checkNumbers = function(userNumber, userName) {
   if (userNumber >= 0) {
     for (let i = 0; i <= userNumber; i++) {
       let numberToString = i.toString(); 
-      if (numberToString.includes('3')) {
-        //check if user has entered name or if there is only whitespace
+      if (i > 0 && i % 3 === 0) {
         if (userName === '') {
           numberArray.push('Won\'t you be my neighbor?');
         } else {
           numberArray.push('Won\'t you be my neighbor, ' + userName + '?' );
         }
+      } else if (numberToString.includes('3')) {
+        numberArray.push('Won\'t you be my neighbor?');
       } else if (numberToString.includes('2')) {
         numberArray.push('Boop!');
       } else if (numberToString.includes('1')) {
