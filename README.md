@@ -6,7 +6,7 @@
 
 ## Description
 
-Use BDD to write specifications for a program that will take in a number from the user and return a range of numbers from 0 up to the user's number, replacing certain digits with 'beeb', 'boop', or 'Won't you be my neighbor?". Based on these specifications, implement the program. Additional features include incorporating the user's name and reversing the order of the range of numbers.
+Use BDD to write specifications for a program that will take in a number from the user and return a range of numbers from 0 up to the user's number, replacing certain digits with 'beeb', 'boop', or 'Won't you be my neighbor?". Based on these specifications, implement the program. Additional features include incorporating the user's name if the number is divisible by 3 and reversing the order of the range of numbers.
 
 ## Setup/Installation Requirements
 
@@ -81,12 +81,20 @@ No known bugs at this time.
 * Input Example: Zoidberg
 * Output Example: 'Won't you be my neighbor, Zoidberg?'
 
-#### Spec 10
+#### Spec 11
+* Behavior: If username is entered, program will return 'Won't you be my neighbor, user name?' if number is divisible by 3.
+* Input Example: 3
+* Output Example: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor, user name?'
+
+* Input Example: 32
+* Output Example: 0 ... 'Won't you be my neighbor?'
+
+#### Spec 12
 * Behavior: If user clicks on reverse button, print 'true' to console.
 * Input Example: user clicks reverse button
 * Output Example: true
 
-#### Spec 11
+#### Spec 13
 * Behavior: If user clicks on reverse button, display reversed range of numbers to the user.
 * Input Example: 3
 * Output Example: 'Won't you be my neighbor?', 'Boop!', 'Beep!', 0
