@@ -21,6 +21,7 @@ let checkNumbers = function(userNumber, userName) {
         numberArray.push(i);
       }
     }
+    //reverse the numberArray and push to reverseArray
     for(let i = numberArray.length - 1; i >= 0; i--) {
       reverseArray.push(numberArray[i]);
     }
@@ -32,11 +33,11 @@ let checkNumbers = function(userNumber, userName) {
 $(document).ready(function() {
   $('#number-form').submit(function(event) {
     event.preventDefault();
-    // get range from 0 to user's number
+
     let userNumber = parseInt($('#number').val());
     let userName = $("#name").val();
     let result = checkNumbers(userNumber, userName);
-    // result will have value of array [numberArray, reverseArray]
+    // result will have value of returned array [numberArray, reverseArray]
     let resultFromZero = result[0];
     let resultFromUserNumber = result[1];
 
