@@ -85,7 +85,6 @@ No known bugs at this time.
 * Behavior: If username is entered, program will return 'Won't you be my neighbor, user name?' if number is divisible by 3.
 * Input Example: 3
 * Output Example: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor, user name?'
-
 * Input Example: 32
 * Output Example: 0 ... 'Won't you be my neighbor?'
 
