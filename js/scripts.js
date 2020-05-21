@@ -1,6 +1,5 @@
 // BUSINESS LOGIC
 let checkNumbers = function(userNumber, userName) {
-  let wrongNumber = 'Please enter a positive, whole number.';
   let numberArray = [];
   let reverseArray = [];
 
@@ -8,6 +7,7 @@ let checkNumbers = function(userNumber, userName) {
     for (let i = 0; i <= userNumber; i++) {
       let numberToString = i.toString(); 
       if (numberToString.includes('3')) {
+        //check if user has entered name or if there is only whitespace
         if (userName === '') {
           numberArray.push('Won\'t you be my neighbor?');
         } else {
@@ -25,9 +25,7 @@ let checkNumbers = function(userNumber, userName) {
       reverseArray.push(numberArray[i]);
     }
     return [numberArray.join(', '), reverseArray.join(', ')];
-  } else {
-    return wrongNumber;
-  }
+  } 
 };
 
 // USER INTERFACE LOGIC
