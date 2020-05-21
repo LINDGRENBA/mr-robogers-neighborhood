@@ -39,7 +39,7 @@ $(document).ready(function() {
     let result = checkNumbers(userNumber, userName);
     // result will have value of returned array [numberArray, reverseArray]
     let resultFromZero = result[0];
-    let resultFromUserNumber = result[1];
+    let resultReversed = result[1];
 
     // show range 0 to userNumber
     $('.number-range').text(resultFromZero);
@@ -47,7 +47,7 @@ $(document).ready(function() {
     $('.reverse-div').slideDown();
     // show range userNumber to 0
     $('.reverse-button').click(function() {
-      $('.number-range').text(resultFromUserNumber);
+      $('.number-range').text(resultReversed);
       $('.reverse-div').slideUp();
     });
   });
