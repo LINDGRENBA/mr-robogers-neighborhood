@@ -6,7 +6,7 @@
 
 ## Description
 
-Use BDD to write specifications for a program that will take in a number from the user and return a range of numbers from 0 up to the user's number, replacing certain digits with 'beeb', 'boop', or 'Won't you be my neighbor?". Based on these specifications, implement the program.
+Use BDD to write specifications for a program that will take in a number from the user and return a range of numbers from 0 up to the user's number, replacing certain digits with 'beeb', 'boop', or 'Won't you be my neighbor?". Based on these specifications, implement the program. Additional features include incorporating the user's name and reversing the order of the range of numbers.
 
 ## Setup/Installation Requirements
 
@@ -32,7 +32,7 @@ No known bugs at this time.
 ## Specifications
 
 #### Spec 1
-* Behavior: Program gathers user input and returns as a number.
+* Behavior: Program gathers user input and returns it as a number.
 * Input Example: 5
 * Output Example: 5
 
@@ -42,7 +42,7 @@ No known bugs at this time.
 * Output Example: false / program does not run
 
 #### Spec 3
-* Behavior: The program returns a range of numbers from 0 to the user's inputted number
+* Behavior: The program returns a range of numbers from 0 to the user's inputted number.
 * Input Example: 4
 * Output Example: 0, 1, 2, 3, 4
 
@@ -72,14 +72,24 @@ No known bugs at this time.
 * Output Example: 'Boop!'
 
 #### Spec 9
-* Behavior: The program replaces all digits with 'Won't you be my neighbor?' if the number contains a 3
+* Behavior: The program replaces all digits with 'Won't you be my neighbor?' if the number contains a 3.
 * Input Example: 23
 * Output Example: 'Won't you be my neighbor?'
 
 #### Spec 10
-* Behavior: If username is entered, program will return 'Won't you be my neighbor, name?'
+* Behavior: If username is entered, program will return 'Won't you be my neighbor, user name?'.
 * Input Example: Zoidberg
 * Output Example: 'Won't you be my neighbor, Zoidberg?'
+
+#### Spec 10
+* Behavior: If user clicks on reverse button, print 'true' to console.
+* Input Example: user clicks reverse button
+* Output Example: true
+
+#### Spec 11
+* Behavior: If user clicks on reverse button, display reversed range of numbers to the user.
+* Input Example: 3
+* Output Example: 'Won't you be my neighbor?', 'Boop!', 'Beep!', 0
 
 ## Support and contact details
 
